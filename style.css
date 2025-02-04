@@ -34,13 +34,13 @@ nav ul li:first-child {
 }
 
 
-.dropdown {
+.down a{
+    position: absolute;
     display: none;
 }
 
-.supports:hover .dropdown {
+.supports:hover .down a {
     display: block;
-    padding: 10px;
 }
 
 main p:first-child {
