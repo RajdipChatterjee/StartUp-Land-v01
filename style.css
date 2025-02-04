@@ -4,12 +4,18 @@
     margin: 0;
 }
 
-nav ul {
+nav > ul {
     display: flex;
     align-items: center;
     list-style-type: none;
     column-gap: 70px;
     margin-bottom: 100px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size:medium;
 }
 
 nav ul li:first-child {
@@ -25,6 +31,16 @@ nav ul li:first-child {
     column-gap: 20px;
     align-items: center;
     color: grey;
+}
+
+
+.dropdown {
+    display: none;
+}
+
+.supports:hover .dropdown {
+    display: block;
+    padding: 10px;
 }
 
 main p:first-child {
