@@ -1,3 +1,11 @@
+:root {
+    --primary-text-color: black;
+    --secoudary-text-color: #333;
+    --ternary-text-color: #666;
+
+    --secoundary-background-color: #F9FBFD;
+}
+
 * {
     font-family: "DM Sans", serif;
     padding: 0;
@@ -30,6 +38,98 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 200px;
+}
+
+.contact {
+    font-size: xxx-large;
+    font-weight: bolder;
+    display: flex;
+}
+
+.under-score {
+    border-bottom: 5px solid black;
+    width: 70px;
+}
+
+.contact-us {
+    background-color: var(--secoundary-background-color);
+    padding: 70px 200px;
+    /* Remove fixed height for better responsiveness */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-options {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between items */
+    padding: 0;
+    margin: 0;
+}
+
+.contact-options li {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    gap: 20px; /* Space between icon and text */
+    flex: 1; /* Makes items grow equally */
+    max-width: 300px; /* Prevent over-stretching */
+}
+
+.contact-options img {
+    width: 50px; /* Control icon size */
+    height: auto;
+}
+
+.contact-options h1 {
+    margin: 0 0 8px 0; /* Space below heading */
+    font-size: 1.2rem;
+    color: var(--secoudary-text-color);
+}
+
+.contact-options p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: var(--ternary-text-color);
+}
+
+.assist-text {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 70px;
+}
+.assist-form {
+    display: flex;
+    justify-content: center;
+}
+form {
+    background-color: var(--secoundary-background-color);
+    display: flex;
+    border-radius: 30px;
+    padding: 50px;
+    gap: 125px;
+}
+form * {
+    padding: 10px;
+}
+form ul li {
+    list-style-type: none;
+    color: var(--ternary-text-color);
+}
+
+input, input:focus, input:active {
+    background: transparent;
+    border-style: none;
+    border-bottom: 1px solid var(--ternary-text-color);
+    width: 17rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
 }
 
 .footer{
