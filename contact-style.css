@@ -4,6 +4,7 @@
     --ternary-text-color: #666;
 
     --secoundary-background-color: #F9FBFD;
+    --button-color: #56BBD0;
 }
 
 * {
@@ -28,7 +29,7 @@
 
 .header a{
     text-decoration: none;
-    background-color: #56BBD0;
+    background-color: var(--button-color);
     color: white;
     padding: 19px;
     border-radius: 10px;
@@ -138,6 +139,14 @@ input[type="radio"], input[type="checkbox"] {
 
 input[type="radio"] {
     margin: 15px;
+}
+
+input[type="submit"] {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .questions-container, .box, .heading, .questions, .questions  div{
