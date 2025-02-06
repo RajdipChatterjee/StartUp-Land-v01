@@ -102,10 +102,12 @@
     font-weight: bold;
     margin: 70px;
 }
+
 .assist-form {
     display: flex;
     justify-content: center;
 }
+
 form {
     background-color: var(--secoundary-background-color);
     display: flex;
@@ -113,9 +115,11 @@ form {
     padding: 50px;
     gap: 125px;
 }
+
 form * {
     padding: 10px;
 }
+
 form ul li {
     list-style-type: none;
     color: var(--ternary-text-color);
@@ -130,6 +134,40 @@ input, input:focus, input:active {
 
 input[type="radio"], input[type="checkbox"] {
     width: auto;
+}
+
+input[type="radio"] {
+    margin: 15px;
+}
+
+.questions-container, .box, .heading, .questions, .questions  div{
+    font-family:;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.questions-container {
+    margin: 100px;
+}
+
+.box {
+    gap: 50px;
+}
+
+.questions {
+    justify-content: space-around;
+}
+
+.questions div{
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    border-bottom: 1px solid var(--ternary-text-color);
+    padding: 30px 0px;
+    font-weight: 5px;
 }
 
 .footer{
